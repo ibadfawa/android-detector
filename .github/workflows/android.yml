@@ -24,10 +24,10 @@ jobs:
       
     
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+      run: chmod +x ${{ github.workspace }}/detector/gradlew
     
     - name: Grandle
-      run: bash ./gradlew assembleDebug --stacktrace
+      run: bash ${{ github.workspace }}/detector/gradlew assembleDebug --stacktrace
 
     - name: Upload APK
 
