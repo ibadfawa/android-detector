@@ -27,7 +27,7 @@ jobs:
       run: chmod +x ${{ github.workspace }}/detector/gradlew
     
     - name: Grandle
-      run: bash ${{ github.workspace }}/detector/gradlew assembleDebug --stacktrace
+      run: bash ${{ github.workspace }}/detector/gradlew
 
     - name: Upload APK
 
@@ -37,4 +37,4 @@ jobs:
 
          name: apk
 
-         path: ${{ github.workspace }}/detector/app/build/outputs/apk/debug/app-debug.apk
+         path: ${{ github.workspace }}/detector/app/build/outputs/apk/release/release.apk
