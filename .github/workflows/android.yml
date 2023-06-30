@@ -27,7 +27,7 @@ jobs:
       run: chmod +x ${{ github.workspace }}/detector/gradlew
     
     - name: Grandle
-      run: bash ${{ github.workspace }}/detector/gradlew
+      run: bash ${{ github.workspace }}/detector/gradlew build
 
     - name: Upload APK
 
