@@ -23,7 +23,7 @@ jobs:
 
       run: cd android-detecor
 
-    - name: Build APK
+    
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     
