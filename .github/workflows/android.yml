@@ -21,7 +21,7 @@ jobs:
         cache: gradle
     - name: CD
 
-      run: cd android-detector
+      run: cd /home/runner/work/ibadfawa/android-detector
 
     
     - name: Grant execute permission for gradlew
