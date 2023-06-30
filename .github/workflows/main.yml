@@ -53,12 +53,13 @@ jobs:
      - name: Upload APK
 
        uses: actions/upload-artifact@v1
+       run: echo ${{ github.workspace }}/detector/app/build/outputs
 
        with:
 
          name: apk
 
-         path: app/build/outputs/apk/debug/app-debug.apk
+         path: ${{ github.workspace }}/detector/app/build/outputs/apk/debug/app-debug.apk
 
  release:
 
